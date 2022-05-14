@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--font-awesome icons-->
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;1,600&family=Kanit:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styling/style.css">
+    <!-- JavaScript -->
+    <script src="script/script.js" defer></script>
+    <!-- bootstrap-5 -->
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styling/apply.css">
+
+
+    <title>Wisdom high school-Akalo</title>
+</head>
+
+<body>
+      <!-- secondary Navbar start -->
+    {{>secondarynavbar}}
+    {{>navresponsive}}
+    <!-- secondary Navbar end -->
+
+    <!--Slider Images Section Start Here -->
+    {{>slidersection}}
+    <!--Slider Images Section Ends Here -->
+
+    <!--nav Section Start Here -->
+    {{>header}}
+    <!--nav Section Ends Here -->
+
+    <!----form starts here-->
+    <form class="apply_form" action="" method="post" id="">
+        <div class="wpuf1">
+            <h2 style="color: orange">APPLICANT'S DETAILS</h2>
+            <p>Please Fill in the Applicant's Details here.</p>
+        </div>
+
+        <div class="form-column">
+            <div class="form-column-1">
+                <div class="form-label">
+                    <label for="applicant_s__students__name">Applicant&#039;s (Students) Name <span
+                            class="required">*</span></label>
+                </div>
+                <div class="form-fields">
+                    <input class="studentsname" id="applicantdetails" type="text" data-duplicate="no"
+                        data-required="yes" data-type="text" name="applicant_s__students__name"
+                        placeholder="e.g. Aggi peter" value="" size="40" />
+                    <span class="form-help">Enter your full name as registered for PLE</span>
+                </div>
+            </div>
+
+            <div class="form-column-2">
+                <div class="form-label">
+                    <label for="religious_affiliation">Religious Affiliation <span class="required">*</span></label>
+                </div>
+                <div class="form-fields">
+                    <select class="religious_affiliation" id="religious_affiliation" name="religious_affiliation"
+                        data-required="yes" data-type="select">
+                        <option value="">— Select —</option>
+                        <option value="muslim">Muslim</option>
+                        <option value="catholic">Catholic</option>
+                        <option value="born_again_">Born Again </option>
+                        <option value="anglican">Anglican</option>
+                        <option value="orthodox">Orthodox</option>
+                        <option value="seventh_day_adventist">Seventh Day Adventist</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-column">
+            <div class="form-column-1 ">
+                <div class="form-label">
+                    <label for="date_of_birth_0">Date of Birth <span class="required">*</span></label>
+                </div>
+
+                <div class="form-fields">
+                    <input id="form-date-date_of_birth" type="text" class="datepicker form_date_of_birth"
+                        data-required="yes" data-type="text" name="date_of_birth" placeholder="dd/mm/yyyy" value=""
+                        size="30" />
+                    <span class="form-help">E.g. 08/12/2001</span>
+                </div>
+            </div>
+
+            <div class="form-fields">
+                <div class="form-label">
+                    <label for="nationality">Nationality <span class="required">*</span></label>
+                </div>
+                <div class="form-fields">
+                    <select class="form_nationality" id="nationality" name="nationality" data-required="yes"
+                        data-type="select">
+
+                        <option value="">— Select —</option>
+                        <option value="ugandan">Ugandan</option>
+                        <option value="south_sudanese">South Sudanese</option>
+                        <option value="tanzanian">Tanzanian</option>
+                        <option value="rwandese">Rwandese</option>
+                        <option value="kenyan">Kenyan</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <span class="form-help">Country of origin</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-column">
+            <div class="form-column-1">
+                <div class="form-label">
+                    <label for="student_s_gender">Student&#039;s Gender <span class="required">*</span></label>
+                </div>
+                <div class="form-fields">
+                    <select class="form_student_s_gender" id="student_s_gender" name="student_s_gender"
+                        data-required="yes" data-type="select">
+                        <option value="">— Select —</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-column-2">
+                <div class="form-label">
+                    <label for="class_applying_for">Class Applying For <span class="required">*</span></label>
+                </div>
+                <div class="form-fields">
+                    <select class="form_class_applying_for" id="class_applying_for" name="class_applying_for"
+                        data-required="yes" data-type="select">
+                        <option value="">— Select —</option>
+                        <option value="s.1">S.1</option>
+                        <option value="s.2">S.2</option>
+                        <option value="s.3">S.3</option>
+                        <option value="s.5">S.5</option>
+                    </select>
+                    <span class="form-help">Select the class applying for</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="form-fields">
+            <h2 style="color: orange">UNEB EXAMINATION RESULTS</h2>
+        </div>
+
+
+        <div class="form-column">
+            <div class="form-column-1-fr">
+                <div class="form-label">
+                    <label for="ple__p_7__results">PLE (P.7) Results <span class="required">*</span></label>
+                </div>
+                <div class="form-fields">
+                    <select class="form_ple__p_7__results" id="ple__p_7__results" name="ple__p_7__results"
+                        data-required="yes" data-type="select">
+                        <option value="">— Select —</option>
+                        <option value="division_one">Division One</option>
+                        <option value="division_two">Division Two</option>
+                        <option value="division_3">Division 3</option>
+                        <option value="division_4">Division 4</option>
+                    </select>
+                </div><br>
+
+                <div class="form-label">
+                    <label for="uce__s_4__results">UCE (S.4) Results</label><br>
+                </div>
+
+                <div class="form-fields">
+                    <select class="form_uce__s_4__results" id="uce__s_4__results" name="uce__s_4__results"
+                        data-required="no" data-type="select">
+                        <option value="">— Select —</option>
+
+                        <option value="division_one">Division One</option>
+                        <option value="division_two">Division Two</option>
+                        <option value="division_3">Division 3</option>
+                        <option value="division_4">Division 4</option>
+                    </select>
+                    <span class="form-help">All S.5 Applicants have to fill in this field</span>
+                </div>
+            </div>
+
+            <div class="form-column-2-tr">
+                <div class="form-label">
+                    <label for="aggregates_attained_in_ple">Aggregates attained in PLE <span
+                            class="required">*</span></label><br>
+                </div>
+                <div class="form-fields">
+                    <input class="form_aggregates_attained_in_ple" id="aggregates_attained_in_ple" type="text"
+                        data-duplicate="no" data-required="yes" data-type="text" name="aggregates_attained_in_ple"
+                        placeholder="PLE Results in figures e.g. 4" value="" size="40" />
+                    <span class="f-help"></span>
+                </div><br>
+
+                <div class="form-label">
+                    <label for="aggregates_attained_in_uce">Aggregates attained in UCE</label>
+                </div>
+
+                <div class="form-fields">
+                    <input class="form_aggregates_attained_in_uce" id="aggregates_attained_in_uce" type="text"
+                        data-duplicate="no" data-required="no" data-type="text" name="aggregates_attained_in_uce"
+                        placeholder="UCE Results in figures e.g. 08" value="" size="40" />
+                    <span class="form_wordlimit-message"></span>
+                    <span class="form-help">All S.5 Applicants have to fill i this field</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="form-column">
+            <div class="form-column-1">
+                <div class="form-label">
+                    <label for="former_school">Former School <span class="required">*</span></label>
+                </div>
+
+                <div class="form-fields">
+                    <input class="form_former_school" id="former_school" type="text" data-duplicate="no"
+                        data-required="yes" data-type="text" name="former_school_" placeholder="" value="" size="40" />
+                    <span class="form-help">Enter the school where you sat your UNEB Examinations</span>
+                </div>
+            </div>
+
+            <div class="form-column-2">
+                <div class="form-label">
+                    <label for="index_number">Index Number <span class="required">*</span></label>
+                </div>
+                <div class="form-fields">
+                    <input class="form_index_number" id="index_number" type="text" data-duplicate="no"
+                        data-required="yes" data-type="text" name="index_number" placeholder="E.g.U0000/000" value=""
+                        size="40" />
+                </div>
+            </div>
+        </div>
+
+        <div class="form-label">
+            <label for="proof_of_uneb_results">Proof of UNEB Results <span class="required">*</span></label>
+        </div>
+        <div class="form-fields">
+            <div id="form-proof_of_uneb_results">
+                <div class="form-attachment-upload-filelist" data-type="file" data-required="yes">
+                    <a id="form-proof_of_uneb_results" data-form_id="2156" class="button file-selector"
+                        href="#">Upload</a>
+                </div>
+            </div>
+            <!-- .container -->
+
+            <span class="form-help">Upload a screenshot/picture of your PLE / UCE results SMS from UNEB Applicant&#039;s
+                name and Index number should clearly be visible.</span>
+
+        </div><br><br>
+        <!-- form-fields -->
+
+
+
+        <div class="form-fields">
+            <h2 style="color: orange">PARENT / GUARDIAN'S DETAILS</h2>
+        </div><br>
+
+        <div class="form-label">
+            <label for="parent_guardian_s_name">Parent / Guardian&#039;s Name <span class="required">*</span></label>
+        </div>
+
+        <div class="form-fields">
+            <input class="form_parent_guardian_s_name" id="parent_guardian_s_name" type="text" data-duplicate="no"
+                data-required="yes" data-type="text" name="parent_guardian_s_name" placeholder="" value="" size="40" />
+            <span class="form-help">E.g. Zawedde Charity</span>
+        </div>&nbsp;
+
+        <div class="form-label">
+            <label for="phone_number">Phone Number <span class="required">*</span></label>
+        </div>
+
+        <div class="form-fields">
+            <input class="form_phone_number" id="phone_number" type="text" data-duplicate="no" data-required="yes"
+                data-type="text" name="phone_number" placeholder="e.g. 0700000000, 0780000000" value="" size="40" />
+            <span class="form-help">Separate with a comma if more than one. </span>
+        </div>&nbsp;
+
+        <div class="form-label">
+            <label for="email_address">Email Address <span class="required">*</span></label>
+        </div>
+
+        <div class="form-fields">
+            <input id="email_address" type="email" class="form_email_address" data-duplicate="" data-required="yes"
+                data-type="email" name="email_address" placeholder="" value="" size="40" autocomplete="email" />
+            <span class="form-help">Enter email address to receive a confirmation of receipt of this application and a
+                copy of this information</span>
+        </div>
+
+        <div class="form-label">
+            &nbsp;
+        </div>
+
+        <input type="hidden" id="once" name="nonce" value="" /><input type="hidden" name="" value="/apply/" />
+        <input type="hidden" name="form_id" value="2156">
+        <input type="hidden" name="page_id" value="2190">
+        <input type="hidden" name="action" value="">
+
+        <input type="hidden" name="forms-front-report" value="no">
+
+
+        <input type="submit" class="forms_submit_btn form_submit" name="submit" value="Submit Registration Form" />
+
+    </form>
+
+    <!--Footer Section Start Here -->
+    {{>footer}}
+    <!--Footer Section End Here -->
+
+    
+
+    <script src="../sources/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

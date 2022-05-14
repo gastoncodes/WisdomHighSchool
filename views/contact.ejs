@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--font-awesome icons-->
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;1,600&family=Kanit:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="styling/style.css">
+    <!-- JavaScript -->
+    <script src="script/script.js" defer></script>
+    <!-- bootstrap-5 -->
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <title>Contact page</title>
+</head>
+<body>
+      <!-- secondary Navbar start -->
+    {{>secondarynavbar}}
+    <!-- secondary Navbar end -->
+    {{>navresponsive}}
+
+    <!--Slider Images Section Start Here -->
+    {{>slidersection}}
+    <!--Slider Images Section Ends Here -->
+
+    <!--nav Section Start Here -->
+    {{>header}}
+    <!--nav Section Ends Here -->
+
+    <div class="main-contact">
+        <h1 class="cont-head">CONTACT INFO</h1>
+        <div class="cont-section">
+            <div class="cont-form">
+                <div class="container bg-primary mt-5 w-40 p-5 jumbotron">
+                      <h2 class="cont-h2 text-white text-top">Contact Us Here</h2>
+                     <form class="form-group">
+                         <label class="cont">Your Name (required)</label>
+                         <input type="text" class="form-control">
+                         
+                         <label class="cont">Your Email (required)</label>
+                         <input type="email" class="form-control">
+                         
+                         <label class="cont">Subject</label>
+                         <input type="text" class="form-control">
+                         
+                         <label class="cont">Your Message</label>
+                         <textarea class="form-control"></textarea> 
+                         <br> 
+                             <button class="btn w3-red ">SEND</button>
+                     </form>
+                </div>
+            </div>
+            <div class="cont-info">
+                <div class="cont-address">
+                    <h3 class="info-h3"><i class="fa fa-email" style="color: #87dbeb;"></i> ADDRESS</h3>
+                    <p>P.O BOX: 798 LIRA</p>
+                    <p>8 KMS FROM LIRA-ADUKU ROAD</p>   
+                </div>
+                <div class="cont-mail">
+                    <h3 class="info-h3"><i class="fa fa-at"style="color: #87dbeb;"></i> EMAIL US</h3>
+                    <p><a href="#">supervisor@wisdomhighschool.com (Supervisor)</a></p>
+                    <p><a href="#">admin@wisdomhighschool.com (Principle)</a></p>
+                    <p><a href="#">dos@wisdomhighschool.com (DOS)</a></p>
+                    <p><a href="#">dean@wisdomhighschool.com (Dean Of Students)</a></p>
+                </div>
+                <div class="cont-call">
+                    <h3 class="info-h3"><i class="fa fa-phone-square" style="color: #87dbeb;"></i> CALL US</h3>
+                    <p>0702479966</p>
+                    <p>0772-479966</p>
+                </div>
+                <div class="cont-icons">
+                    <p><i class="fa fa-facebook-official" style="color: blue;"></i></p>
+                    <p><i class="fa fa-twitter-square" style="color: #87dbeb;"></i></i></p>
+                    <p><i class="fa fa-instagram"style="color: #808080;"></i></p>
+                    <p><i class="fa fa-youtube-play"style="color: #FF0000;"></i></p>
+                </div>
+            </div>
+            </div>
+           <h1 class="find">FIND US</h1>
+        </div>
+        
+        <div class="cont-find">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.0438598528003!2d32.82249945010552!3d2.1368572591295543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1770a5f94a2dff4f%3A0x440904fb771c765f!2sWisdom%20High%20School!5e0!3m2!1sen!2sug!4v1643646837300!5m2!1sen!2sug" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <!--Footer Section Start Here -->
+    {{>footer}}
+    <!--Footer Section End Here -->
+</body>
+</html>

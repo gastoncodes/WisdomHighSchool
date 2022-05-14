@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="js/bootstrap.min.js">
+    <link rel="stylesheet" href="styling/style.css">
+    <!-- JavaScript -->
+    <script src="script/script.js" defer></script>
+    <title>e-learning</title>
+</head>
+
+<body>
+      <!-- secondary Navbar start -->
+    {{>secondarynavbar}}
+    <!-- secondary Navbar end -->
+    {{>navresponsive}}
+
+    <!--Slider Images Section Start Here -->
+    {{>slidersection}}
+    <!--Slider Images Section Ends Here -->
+
+    <!--nav Section Start Here -->
+    {{>header}}
+    <!--nav Section Ends Here -->
+
+    <div class="container bg-primary d-flex mt-3" style="border-radius: 10px;">
+        <div class="text-white">
+            <h2>E-learning platform</h2><br>
+            <p>Come and experience a holistic approach to
+                <br> learning by studying online</p>
+        </div>
+        <div>
+            <img src="images/e1.jpg" class="mt-2 mb-2 mr-2" style="border-radius: 10px;">
+            <img src="images/e2.jpg" class="mt-2 mb-2 mr-2" style="border-radius: 10px;">
+            <img src="images/e3.jpg" class="mt-2 mb-2 mr-2" style="border-radius: 10px;">
+            <button type="button" class="btn btn-danger mb-2">Join online learning now</button>
+        </div>
+    </div>
+
+    <!--Footer Section Start Here -->
+    {{>footer}}
+    <!--Footer Section End Here -->
+</body>
+
+</html>
