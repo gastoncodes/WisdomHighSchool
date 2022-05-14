@@ -1,0 +1,209 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+
+html, body {
+    margin: auto !important;
+    overflow-x: hidden !important;
+    scroll-behavior: smooth;
+  }
+
+.apply_form {
+    background-color: #ECF8FF;
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+    color: #222222;
+}
+
+.wpuf1 h2 {
+    font-size: 40px;
+    margin: 0px 0px 20px;
+}
+
+.wpuf1 p {
+    font-size: 16px;
+    margin: 0px 0px 25.6px;
+}
+
+.wpuf1 {
+    padding: 10px;
+    margin: 0px 0px 10px;
+}
+
+span.required {
+    color: #FF0000;
+    font-size: 20px;
+}
+
+.form-column {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 0px 0px 10px;
+    text-align: left;
+    flex: 1;
+
+}
+
+span.form-help {
+    color: #666;
+    margin: 2px 0 5px 0;
+    font-size: 12px;
+    font-style: italic;
+    font-family: sans-serif;
+    display: block;
+}
+
+input[type=submit] {
+    font-size: 16px;
+    padding: 5px 15px;
+    line-height: inherit;
+    height: inherit;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #0085ba;
+    border-color: #0073aa #006799 #006799;
+    -webkit-box-shadow: 0 1px 0 #006799;
+    box-shadow: 0 1px 0 #006799;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #006799, 1px 0 1px #006799, 0 1px 1px #006799, -1px 0 1px #006799;
+
+}
+
+input[type=text], input[type=email] {
+    width: 90%;
+    padding: 5px;
+    background: #FAFAFA;
+}
+
+.form_student_s_gender, .form_uce__s_4__results,
+.form_ple__p_7__results, .form_class_applying_for,
+.form_nationality, .religious_affiliation {
+    border: 1px solid #eee;
+    padding: 2px;
+    margin-right: 20rem;
+
+    height: 2em;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    min-width: 150px;
+    max-width: 100%;
+}
+
+label {
+    font-weight: bold;
+}
+
+/* media queries */
+
+@media only screen and (max-width:380px) {
+
+    .form-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: left;
+
+    }
+
+    input[type=text], input[type=email] {
+        width: 90%;
+        padding: 5px;
+        background: #FAFAFA;
+        height: 40px;
+    }
+
+    .apply_form {
+        background-color: #ECF8FF;
+        width: 95%;
+        padding: 20px;
+        color: #222222;
+        margin: 0 auto;
+    }
+
+    .wpuf1 {
+        padding: 5px;
+        margin: 0px 0px 8px;
+    }
+
+    .wpuf1 h2 {
+        font-size: 20px;
+        margin: 0px 0px 20px;
+        text-align: center;
+    }
+
+    .wpuf1 p {
+        text-align: center;
+    }
+
+    input[type=submit] {
+        font-size: 10px;
+        padding: 3px 10px;
+        height: 5vh;
+
+    }
+
+    span.required {
+        font-size: 16px;
+    }
+
+    label {
+        font-size: 15px;
+    }
+
+    .form_student_s_gender, .form_uce__s_4__results,
+    .form_ple__p_7__results, .form_class_applying_for,
+    .form_nationality, .religious_affiliation {
+
+        padding: 1px;
+        min-width: 120px;
+        max-width: 90%;
+        height: 5vh;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
+
+    .apply_form {
+        width: 95%;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    .wpuf1 h2 {
+        font-size: 28px;
+        margin: 0px 0px 20px;
+        text-align: center;
+    }
+
+    .wpuf1 p {
+        text-align: center;
+    }
+
+    span.required {
+        font-size: 20px;
+    }
+
+    label {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    html {
+        font-size: 65%;
+    }
+}
