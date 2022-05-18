@@ -8,6 +8,7 @@ var  dropdown = document.querySelector('.dropdown-nw')
 var  dropdown1 = document.querySelector('.dropdown1-nw')
 
 const mainbody = document.querySelector('.mainbody')
+const mainbody1 = document.querySelector('.mainbodyapply')
 
 var i;
 
@@ -20,6 +21,7 @@ openbtn.addEventListener('click',()=>{
     openbtn.style.display='none';
     closebtn.style.display='block';
     mainbody.style.display='none'
+    mainbody1.style.display='none'
 })
 
 closebtn.addEventListener('click',()=>{
