@@ -517,7 +517,80 @@ html, body {
 /* News_Events Ends Here */
 
 /* styling for vission mission corevalues starts here */
+/*welcom styling*/
 
+.home-cntr {
+padding: 2rem 9%;
+display: flex;
+align-items: center;
+gap: 1.5rem;
+min-height: 100vh;
+
+}
+.home-cntr .content {
+    padding-top: 6.5rem;
+    flex: 1;
+}
+.wel_heading {
+    color: #333;
+    font-size: 5rem;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.home-cntr .content p {
+    font-size: 1.7rem;
+    color: #666;
+    padding: 1rem 0;
+}
+.home-cntr .image {
+    flex: 1;
+}
+.home-cntr .image img {
+    width: 100%;
+    padding: 1rem;
+    animation: float 3s linear infinite;
+}
+@keyframes float {
+    0% { background-color: rgb(221, 45, 14);}
+    50% {background-color: rgb(255, 208, 53);}
+     100% {
+        transform: translateY(0rem);
+    }
+    50% {
+        transform: translateY(3rem);
+    }
+}
+.wel_btn {
+    display: block;
+    padding: 0.8rem 3rem;
+    border: 0.2rem solid var(--color);
+    border-radius: 1.7rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    overflow: hidden;
+    color: var(--color);
+    position: relative;
+    z-index: 0;
+}
+.wel_btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--color);
+    transition: 0.3s linear;
+    z-index: -1;
+}
+.wel_btn:hover{
+    color: #fff;
+}
+.wel_btn:hover::before {
+    width: 100%;
+}
 .vission-mission-corevalues {
   margin: 50px 0px 20px 0px;
   display: flex;
@@ -1060,6 +1133,30 @@ box-shadow:  12px 12px 29px #007bff,
              -12px -12px 29px #007bff;
   
   }
+  /*welcom responsive*/
+.home-cntr{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 5%;
+  margin-bottom: 20px;
+  gap: 0.8rem;
+}
+.home-cntr .content {
+    padding-top: 2rem;
+}
+.wel_heading {
+    font-size: 2.6rem;
+    padding-top: 0.5rem;
+}
+.home-cntr .content p {
+    font-size: 1rem;
+    padding: 1.4rem 0;
+}
+.wel_btn {
+  font-size: 1.2rem;
+  padding: 0.4rem 1.5rem;
+
+}
 
 
   /* contact page ends here*/
