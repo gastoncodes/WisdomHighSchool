@@ -37,6 +37,11 @@ app.get('/accademics',(req,res)=>{ res.render('accademics') })
 app.get('/apply',(req,res)=>{ res.render('apply') })
 app.get('/clubs',(req,res)=>{ res.render('clubs') })
 app.get('/contact',(req,res)=>{ res.render('contact') })
+app.get('/contact',(req,res)=>{ res.render('contact') })
+app.get("/aboutus", (req, res) => {
+  res.render("aboutus");
+});
+
 app.get('/e-learning',(req,res)=>{ res.render('e-learning') })
 app.get('/galary',(req,res)=>{ res.render('galary') })
 app.get('/games_sports',(req,res)=>{ res.render('games_sports') })
