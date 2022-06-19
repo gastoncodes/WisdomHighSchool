@@ -8,6 +8,10 @@ const app = express();
 
 const port = 8081;
 
+const ConnectDB = require("./db/connect");
+
+ConnectDB();
+
 
 app.use(express.static('public'));
 
