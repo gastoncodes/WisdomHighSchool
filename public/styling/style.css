@@ -528,27 +528,27 @@ min-height: 100vh;
 
 }
 .home-cntr .content {
-    padding-top: 6.5rem;
+    padding-top: 5rem;
     flex: 1;
 }
 .wel_heading {
     color: #333;
-    font-size: 5rem;
-    padding-top: 1rem;
+    font-size: 4rem;
+    padding-top: 0.8rem;
     text-align: center;
 }
 
 .home-cntr .content p {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     color: #666;
-    padding: 1rem 0;
+    padding: 0.8rem 0;
 }
 .home-cntr .image {
     flex: 1;
 }
 .home-cntr .image img {
-    width: 100%;
-    padding: 1rem;
+    width: 70%;
+    padding: 0.7rem;
     animation: float 3s linear infinite;
 }
 @keyframes float {
@@ -563,10 +563,10 @@ min-height: 100vh;
 }
 .wel_btn {
     display: block;
-    padding: 0.8rem 3rem;
+    padding: 0.5rem 2rem;
     border: 0.2rem solid var(--color);
     border-radius: 1.7rem;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     cursor: pointer;
     margin-top: 1rem;
     overflow: hidden;
@@ -1076,7 +1076,7 @@ box-shadow:  12px 12px 29px #007bff,
 
 
 /* Responsiveness Start */
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 556px) {
   .nav-bar-scroll-main1{
     display: none;
   }
@@ -1315,6 +1315,104 @@ padding: 3rem;
 
 
   /* contact page ends here*/
+}
+@media screen and (max-width: 768px) {
+  .nav-bar-scroll-main1{
+    display: none;
+  }
+  .slider-wrapper {
+    height: 80vh;
+  }
+  .nav-bar {
+    display: none;
+    position: relative;
+  }
+  .nav-bar-scroll {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+  }
+  .nav-bar-scroll h1 {
+    font-size: 16px;
+  }
+  .nav-bar-scroll p {
+    font-size: 12px;
+  }
+  .nav-links {
+    display: block;
+  }
+  .nav-links ul {
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(236, 69, 69, 0.788);
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links ul.active {
+    transform: translateX(0%);
+  }
+  .nav-bar-scroll .nav-bar-scroll-cont-1 img {
+    height: 40px;
+    width: 40px;
+  }
+  .menu-logo img {
+    display: block;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+  }
+  .slider-info h1 {
+    font-size: 20px;
+    font-weight: 800;
+  }
+  .slider-image-btn {
+    margin: 0px 0px 40px 0px;
+    padding: 8px;
+    font-size: 0.8rem;
+    background-color: rgba(236, 69, 69, 0.788);
+  }
+  .news-events-container {
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .news-items {
+    flex-direction: column;
+    display: block;
+  }
+  .news-item {
+    max-width: 100%;
+    height: 500px;
+    margin-top: 10px;
+  }
+  .news-img {
+    height: 250px;
+    width: 100%;
+  }
+  .event-item {
+    width: 100%;
+  }
+  .vission-mission-corevalues {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 30px 20px 30px;
+  }
+  .sub-mvc {
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.2);
+  }
+  .google-map {
+    height: 50vh;
+    width: 100vw;
+    margin: 0px 0px -8px 0px;
+  }  
 }
 @media screen and (max-width: 1024px) {
 }
