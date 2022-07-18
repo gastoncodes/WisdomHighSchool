@@ -1,7 +1,6 @@
 :root {
   --color: rgb(236, 69, 69);
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -281,6 +280,10 @@ html, body {
   background-color: rgb(224, 223, 223);
   border: 1.5px solid rgb(236, 69, 69);
   color: rgb(236, 69, 69);
+}
+.slider-image-btn a{
+  text-decoration: none;
+  color: white;
 }
 
 /* .slider-section:hover .slider-img,
