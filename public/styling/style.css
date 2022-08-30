@@ -1419,6 +1419,13 @@ padding: 3rem;
   .img-notice img{
     height: 5cm;
   }
+  .readmore{
+    width: 100%;
+    margin: auto;
+  }
+  .readmore img{
+    height: 5cm;
+  }
 }
 @media screen and (max-width: 1024px) {
 }
