@@ -6,11 +6,7 @@ const path = require("path");
 
 const app = express();
 
-const port = 8080;
-
-const ConnectDB = require("./db/connect");
-
-ConnectDB();
+const port = process.env.PORT || 8080;
 
 app.use(express.static("public"));
 
